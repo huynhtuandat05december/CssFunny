@@ -1,0 +1,30 @@
+.switch{
+    appearance: none;
+    width: 100px;
+    height: 49px;
+    background-color: rgb(149, 144, 144);
+    border-radius: 30px;
+    border: 1px solid black;
+    outline:none;
+    transition: all 200ms;
+    position:relative;
+}
+.switch:checked{
+    background-color: green;
+    border: 1px solid green;
+    
+}
+.switch::before{
+    content:"";
+    width: 47px;
+    height: 47px;
+    position:absolute;
+    background-color: white;
+    border-radius: 50%;
+    top:0px;
+    left: 0px; 
+    transition: 200ms;
+}
+.switch:checked::before{
+    left:51px
+}
